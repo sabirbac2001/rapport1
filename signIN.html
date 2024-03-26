@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Form</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Rapport Link </a>
+            </div>
+
+        </div>
+    </nav>
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Welcome!</h2>
+                    <p>Create your account.<br>For Free!</p>
+                    <a href="file:///C:/Users/ASUS/OneDrive/Desktop/TRY/Car%20rental%20site/SingUp.html" class="btn">Sign Up</a>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <form action="">
+                        <p>
+                            <label>Username/Email address<span>*</span></label>
+                            <input type="text" placeholder="Username or Email" required>
+                        </p>
+                        <p>
+                            <label>Password<span>*</span></label>
+                            <input type="password" placeholder="Password" required>
+                        </p>
+                        <p>
+                            <input type="submit" value="Sign In">
+                        </p>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var username = document.querySelector('input[type="text"]').value;
+            var password = document.querySelector('input[type="password"]').value;
+
+            if (username === 'marjan_h@gmail.com' && password === 'marjan123') {
+                // Redirect to another page or show a success message
+                window.location.href = 'welcome.html';
+            } else {
+                // Show an error message
+                alert('Invalid username or password');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
